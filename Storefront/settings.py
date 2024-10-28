@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'store.apps.StoreConfig',
     'tags.apps.TagsConfig',
     'likes.apps.LikesConfig',
-    'core.apps.CoreConfig',
     'debug_toolbar',
 ]
 
@@ -93,7 +92,7 @@ DATABASES = {
     # },
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'storefront_2',
+        'NAME': 'storefront',
         'USER': 'root',
         'PASSWORD': 'biniam1996',
         'HOST': 'localhost',
@@ -143,4 +142,3 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-AUTH_USER_MODEL = 'core.user'
